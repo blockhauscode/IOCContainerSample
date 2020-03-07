@@ -2,8 +2,8 @@ import geocoderService from "./geocoderService.mjs"
 import restService from "./restService.mjs"
 import constantService from "./constantsService.mjs"
 
-export const STRATEGY_CACHED = "cached"
-export const STRATEGY_NEW = "new"
+export const STRATEGY_CACHED = Symbol("cached")
+export const STRATEGY_NEW = Symbol("new")
 
 export class IOCContainer {
     constructor() {
